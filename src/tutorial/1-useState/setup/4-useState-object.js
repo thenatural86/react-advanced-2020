@@ -1,16 +1,22 @@
 import React, { useState } from 'react'
 
 const UseStateObject = () => {
-  const [person, setPerson] = useState({
-    name: 'pete',
-    age: 24,
-    message: 'rando mess',
-  })
+  // const [person, setPerson] = useState({
+  //   name: 'pete',
+  //   age: 24,
+  //   message: 'rando mess',
+  // })
   // console.log(person)
-  const { name, age, message } = person
+
+  const [name, setName] = useState('pete')
+  const [age, setAge] = useState(24)
+  const [message, setMessage] = useState('rando mess')
+
+  // const { name, age, message } = person
 
   const changeMessage = () => {
-    setPerson({ ...person, message: 'yolo world' })
+    // setPerson({ ...person, message: 'yolo world' })
+    setMessage('Yolo World')
   }
   return (
     <>
